@@ -9,7 +9,6 @@ interface ClientLayoutProps {
 }
 
 export default function ClientLayout({ children }: ClientLayoutProps) {
-  const searchParams = useSearchParams() // only if needed
 
   return (
     <>
