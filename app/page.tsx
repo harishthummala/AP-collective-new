@@ -13,7 +13,7 @@ export default function HomePage() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
   useEffect(() => {
-    const timer = setTimeout(() => setFadeOut(true), 10000);
+    const timer = setTimeout(() => setFadeOut(true), 4000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -52,7 +52,7 @@ export default function HomePage() {
         <div
           className="absolute inset-0 z-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('/elegant-wedding-ceremony-editorial.jpg')`,
+            // backgroundImage: `url('/elegant-wedding-ceremony-editorial.jpg')`,
           }}
           aria-hidden="true"
         />
